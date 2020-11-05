@@ -22,6 +22,7 @@ public class DoorControler : MonoBehaviour
     {
         if (doorIsOpening){
         	gameObject.transform.Translate(Vector3.forward*Time.deltaTime*speedOpening);
+        	return;
         }
 
         if (gameObject.transform.position.y < 0f){
